@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
+import { Router, useRouter } from 'next/router';
 import { useState } from 'react';
 
 import { useRecoilState } from 'recoil';
@@ -15,10 +16,14 @@ export const InputPage: NextPage = () => {
     setForm(event.target.value);
   };
 
+  const router = useRouter();
+
   const onSubmit = (event: React.FormEvent) => {
     event.preventDefault();
 
     setInput({ text: form });
+
+    router.push('/');
   };
 
   return (
