@@ -12,6 +12,12 @@ export const InputPage: NextPage = (props) => {
       <p className={styles.description}>
         <Link href={'/'}>Link Home</Link>
       </p>
+      <p className={styles.description}>
+        <form>
+          <input type={'text'} />
+          <button type={'submit'}>登録する</button>
+        </form>
+      </p>
     </>
   );
 };
