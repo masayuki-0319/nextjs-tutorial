@@ -14,6 +14,9 @@ export const HomePage: NextPage = (props) => {
       <p className={styles.description}>
         <Link href={'/about'}>Link About</Link>
       </p>
+      <p className={styles.description}>
+        <Link href={'/input'}>Link InputPage</Link>
+      </p>
     </>
   );
 };
